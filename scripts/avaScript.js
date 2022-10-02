@@ -9,7 +9,6 @@ try {
 	};
 	date1.textContent = `${new Date().toLocaleDateString("en-UK", options)} ${mueveReloj()}`;
 } 
-
 catch (e) {
 	alert("Error with code or your browser does not support Locale");
 }

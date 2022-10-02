@@ -1,43 +1,26 @@
 
-let date1 = document.querySelector("#currentdate");
+let date1 = document.querySelector("#currendate");
 
 try {
 	const options = {
 		day: "numeric",
 		month: "numeric",
-		year: "numeric",
+		year: "numeric"
 	};
-	date1.innerHTML = `Today is <span>${new Date().toLocaleDateString("en-UK", options)}</span>!`;
-} catch (e) {
+	date1.textContent = `${new Date().toLocaleDateString("en-UK", options)} ${mueveReloj()}`;
+} 
+
+catch (e) {
 	alert("Error with code or your browser does not support Locale");
 }
 
+function mueveReloj(){
+    momentoActual = new Date();
+    hora = momentoActual.getHours();
+    minuto = momentoActual.getMinutes();
+    segundo = momentoActual.getSeconds();
 
+    horaImprimible = hora + ":" + minuto + ":" + segundo;
 
-let daynames = [
-	"Sunday",
-	"Monday",
-	"Tuesday",
-	"Wednesday",
-	"Thursday",
-	"Friday",
-	"Saturday"
-];
-let months = [
-	"January",
-	"February",
-	"March",
-	"April",
-	"May",
-	"June",
-	"July",
-	"August",
-	"September",
-	"October",
-	"November",
-	"December"
-];
-let d = new Date();
-let year = d.getFullYear();
-let fulldate = `${year}`;
-document.querySelector("#currendate").textContent = fulldate;
+    return horaImprimible;    
+}

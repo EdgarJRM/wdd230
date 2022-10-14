@@ -1,11 +1,12 @@
-const input = document.querySelector("input");
-const button = document.querySelector("button");
-const list = document.querySelector("ul");
+const input = document.querySelector("#favchap");
+const button = document.querySelector("#BtnAdd");
+const list = document.querySelector("#ulList");
 
-button.addEventListener('clic', function() {
-    if (input.value = ""){
-        aletr ("Please add a chapter from the book of mormon")
-    } else if{
+button.addEventListener("click", function() {
+    
+    if (input.value == ""){
+        alert ("Please add a chapter from the book of mormon");
+    } else{
         let bookMormon = input.value;
 
         const listItem = document.createElement("li");
@@ -15,10 +16,16 @@ button.addEventListener('clic', function() {
         listItem.appendChild(listText);
         listItem.textContent = bookMormon;
         listItem.appendChild (listBtn);
-        listBtn.textContent = " ❌ "
+        listBtn.textContent = " ❌ ";
+
+        list.appendChild(listItem);
+
+        input.value = ""
+
+        listBtn.addEventListener("click",function(){
+            list.removeChild(listItem);
+        })
         
-
-
     }
     input.focus;
-}
+})

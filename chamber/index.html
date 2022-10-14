@@ -10,9 +10,58 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
+    <link rel="shortcut icon" href="favicon.ico">
     <title>Chamber of Commerce</title>
 </head>
 <body>
-    <h1>Chamber of Commerce</h1>
+    <header>
+        <img class="logo" alt="Chamber Logo" src="logo.png">
+        <h1>Chamber of Commerce</h1>
+        <a href="https://www.facebook.com/"><img class="socialLogo" alt="Facebook" src="images/facebook.png"></a>
+        <a href="https://www.instagram.com"><img class="socialLogo" alt="Instagram" src="images/instagram.png"></a>
+        <button id="navButton" type="button"><img class="hamburger" alt="Navigation" src="hamburger.png"></button>
+        <nav id="nav" style="display: flex;">
+            <ul>
+                <li><a href="">Discover</a></li>
+                <li><a href="">Directory</a></li>
+                <li><a href="">Join</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+        <p id="Date"><span id="TodayDate"></span></p>
+    </header>
+    <main>
+        <div class="home">
+            <section id="hero">Hero with site name call to action</section>
+            <section class="event">Event</section>
+            <section class="weather">Weather</section>
+            <section class="news">News Release</section>
+            <section class="spotlights">
+                <div class="spotlight">Spotlight 1</div>
+                <div class="spotlight">Spotlight 2</div>
+                <div class="spotlight">Spotlight 3</div>
+            </section>
+            <section class="join">Join</section>
+        </div>
+    </main>
+    <footer>
+        <div class="">
+            <img class="logo" alt=" Chamber Logo" src="images/logo.png">
+            <div class="">
+                <h1> Chamber of Commerce</h1>
+                <p class="address">123 Chamber lane<br>,  58885</p>
+            </div>
+            <div class="">
+                <p class="email">info@chamber.org</p>
+                <p class="phone">+1 (801) 369-5375</p>
+                <a class="map"><img class="pin" alt="Map Pin" src="images/pin.png">Location Map</a>
+            </div>
+        </div>
+        <hr> 
+        <div class="">
+            <p class="copyright">&copy; 2022 </span>Chamber<span class="l"> | </span><br><b>Edgar Rodríguez</b><span class="l"> | </span><br>WDD 230 Project<span class="l"> | </span><br class="meanie">Last Modification: <span id="currendate"></span></p>
+        </div>
+    </footer>
+    <script src="scripts/myscripts.js"></script>
 </body>
 </html>

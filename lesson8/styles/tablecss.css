@@ -36,6 +36,13 @@ tbody tr:nth-child(even) {
 	background-color: var(--zebra);
 }
 
+caption {
+	padding: 10px;
+	caption-side: bottom;
+	color: var(--back);
+	font-size: 1.3rem;
+}
+
 @media only screen and (min-width: 38em) {
     table {
         width: 80%;

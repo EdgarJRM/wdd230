@@ -1,0 +1,39 @@
+@use "nesting";
+
+// Variable
+
+$color-principal: #ccc;
+$color-letter: blue;
+
+body{
+    background: $color-principal;   
+}
+
+h1{
+    color: $color-letter;
+}
+
+p{
+    color: $color-letter;
+}
+
+//Mixins
+@mixin personalized_boxes($background: white, $color: $color-letter){
+    background-color: $background;
+    border: 4px solid black;
+    box-shadow: 0px 0px 2px black;
+    color: $color;
+    margin: 20px;
+}
+.box{
+    @include personalized_boxes()
+}
+
+.box2{
+    @include personalized_boxes(gray,red)
+}
+
+// Sass Operators
+.box, .box2{
+    width: 400px + 300px;
+}

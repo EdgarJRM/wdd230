@@ -1,12 +1,10 @@
-/* if you are using any Google fonts change the font names below to your fonts. 
-Any spaces in your font name should be replaced with a +. 
-Fonts are separated by a | */
-@import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Hubballi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&family=Roboto:wght@700&display=swap');
 
 body {
+	max-width: 960px;
     margin: 0 auto;
 	font-size: 20px;
-	font-family: "Boogaloo", Hubballi, sans-serif;
+	font-family: "Roboto", Passion One, sans-serif;
 }
 /* phone or baseline views, small */
 main {
@@ -17,14 +15,39 @@ main {
 }
 header {
 	margin: 0 auto;	
-    background-color: rgb(0, 65, 65);
+    background-color: #3a5073;
     text-align: center;
     color: white;
     padding: 2px;
 }
+#pin h1{
+	font-family: "Roboto", Passion One, sans-serif;
+}
+#pin h2{
+	font-family: "Roboto", Passion One, sans-serif;
+}
+nav {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	background-color: #7b9fc7;
+	box-shadow: 0 0 10px #333;
+	justify-content: center;
+}
+nav a {
+	color: #fff;
+	padding: 15px;
+	text-decoration: none;
+	font-size: 1.5rem;
+}
+
+nav a:hover {
+	background-color: #708080;
+	color: yellow;
+}
 footer {
 	margin: 0 auto;	
-    background-color: rgb(0, 65, 65);
+    background-color: #3a5073;
     text-align: center;
     color: white;
 }
@@ -37,26 +60,6 @@ main img {
     margin: 0 auto;
     padding: 10px;
 }
-
-main section h2 {
-    text-align: center;
-	color: #ffffff;
-    background-color: rgb(0, 90, 90);
-}
-
-main section {
-	margin: 0.5rem;
-	border: 1px solid #bbb;
-    border-radius: 15px;
-	padding: 0 1rem;
-	background-color:rgb(126, 221, 221);
-}
-
-main section:nth-child(2) {
-	display: span 2;
-	margin: 0.5rem;
-}
-
 table, th, td {
   border: 1px solid black;
   border-collapse: collapse;
@@ -68,11 +71,82 @@ table {
   width: 90%;
   align-items: center;
 }
+h2, h1{
+	font-family: "Passion One", Roboto, sans-serif;
+}
+p{
+	font-family: "Roboto", Passion One, sans-serif;
+}
 
+
+
+/*Color.html https://coolors.co/3a5073-ffffff-b4c5d6-96b1ca-7b9fc7 */
+
+.primary {
+background-color: #3a5073;
+}
+
+.secondary {
+background-color: #7b9fc7;
+}
+
+.accent1 {
+background-color: #b4c5d6;
+}
+.accent2 {
+background-color: #96b1ca;
+}
+
+
+/*Typografy.html*/
+.sample1,
+.sample3 {
+	color: #ffffff;
+	background-color: #3a5073;
+	font-size: 38px;
+}
+.sample3, .sample7 {
+	font-size: 20px;
+}
+.sample2 {
+	background-color: #7b9fc7;
+	color: #ffffff;
+	font-size: 1.5rem;
+}
+.colors1, .colors3{
+	background-color: #3a5073;
+}
+.colors2{
+	background-color: #7b9fc7;
+}
+.sample7,
+.sample4,
+.sample5,
+.sample6 {
+	background-color: #ffffff;
+	color: #000000;
+}
+.sample4 {
+	font-size: 35px;
+	color: #3a5073;
+}
+.sample5 {
+	font-size: 30px;
+	color: #7b9fc7;
+	font-family: Passion One;
+}
+.sample6 {
+	font-size: 25px;
+	color: #96b1ca;
+}
+.sample7 {
+	font-family: Passion One;
+}
 /* Tablet Views, medium */
 @media only screen and (min-width: 37.5em) {
-	main {
-		grid-template-columns: 1fr 1fr;
+	nav {
+		flex-direction: row;
+		font-size: 0.7rem
 	}
 
 	main section:nth-child(2) {
@@ -95,11 +169,8 @@ table {
 
 /* Desktop Views, large */
 @media only screen and (min-width: 60em) {
-	main {
-		grid-template-columns: 1fr 1fr 1fr;
-	}
-
-	main section:nth-child(3) {
-		grid-column: span 1;
+	nav {
+		flex-direction: row;
+		font-size: 1.1rem
 	}
 }

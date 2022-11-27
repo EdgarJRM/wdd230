@@ -1,184 +1,116 @@
-header{
-    background-color: rgb(19, 19, 138);
-    display: flex;
-    flex-direction: row;
-    align-self: stretch;
-    align-content:space-between;
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&family=Roboto:wght@700&display=swap');
+/*menu*/
+/* Mobile View ***************/
+
+.navigation {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+    background-color: #7b9fc7;
+	box-shadow: 0 0 10px #333;
+	justify-content: center;
+}
+.navigation li:first-child {
+	display: block;
+}
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: block;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+	color: #fff;
+	font-weight: 700;
+	transition: 0.5s;
+	font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+.menu::before {
+	content: "≡";
+	font-size: 2rem;
+}
+
+.navigation a:hover, navigation a:active {
+	color: white;
+	background-color: black;
+}
+.responsive li {
+	display: block;
+}
+.responsive a.menu::before {
+	content: "X";
+}
+
+
+/*--Home Page---*/
+body {
+	max-width: 1230px;
     margin: 0 auto;
-    
-}
-main section{
-    background-color: blueviolet;
-    margin: 10px;
-    display:grid;
-    width: 200px;
-    height: 200px;
-    border-color: black;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    
-}
-.home{
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-.event{
-    grid-column: 1/5;
-    grid-row: 1/4; 
-}
-.weather{
-    grid-column: 1/5;
-    grid-row: 2/4;   
-}
-#hero{
-    grid-column: 2/5;
-    grid-row: 1/4;
-    width: 400px;
-    height: 400px;
-}
-.news{
-    grid-column: 2/5;
-    grid-row: 3/4;
-    width: 400px;  
-}
-.spotlights{
-    grid-column: 4/5;
-    grid-row: 1/3;   
-}
-.join{
-    grid-column: 1/5;
-    grid-row: 3/4;   
+	font-size: 20px;
+	font-family: "Roboto", Passion One, sans-serif;
 }
 
-________________________________________________________-
-/* General **********************/
-
-p, nav ul li a {
-    font-family: 'Lora', sans-serif;
-    text-decoration: none;
+/* phone or baseline views, small */
+main {
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr;
 }
-
-nav {
-    grid-column: 1/6;
+header {
+	margin: 0 auto;	
+    background-color: #3a5073;
     text-align: center;
+    color: white;
+    padding: 2px;
 }
-
-nav ul {
-    list-style: none;
-    padding: 0;
+header p{
+    background-color: #7b9fc7;
 }
-
-nav ul li a {
-    color: #73a18e;
-}
-
-nav ul li a:hover {
-    color: #4a876e;
-}
-
-/* Header **********************/
-
-
-header a {
-    margin-top: 10px;
-}
-
-.socialLogo {
-   
-   padding: 5px;
-
-}
-
-header .hamburger {
-    width: 40px;
-    height: 40px;
-    margin: auto;
-    margin-top: 5px;
-}
-
-header .logo {
-    width: 50px;
-    height: 50px;
-}
-
-h1 {
-    margin-top: 0;
-    font-size: 25px;
-    margin-bottom: 0;
-    font-family: 'Montserrat', sans-serif;
-    color: #b0e4cf;
-}
-
-h1 .subheader {
-    display: block;
-    font-style: italic;
-    font-weight: normal;
-    font-size: large;
-}
-
-#navButton {
-    border: none;
-    padding: 0;
-    width: fit-content;
-    height: fit-content;
+header div, footer div{
     display: flex;
-    background-color: rgba(1,1,1,0);
-}
-
-#Date {
-    grid-column: 1/7;
-    grid-column: 2/3;
-    width: 100%;
-    margin-top: 5px;
-    height: 2em;
-    background-color: #0d6277;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #a9c7ae;
-    color: #ffffff;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
     text-align: center;
-    line-height: 200%; /*I don't know why but it centers*/
 }
 
-/* Footer **********************/
+.logo, .socialLogo{
+    padding: 5px;
+}
+
+/* Footer*/
 footer {
-    margin: 5px;
-    margin-bottom: 10px;
+	margin: 0 auto;	
+    background-color: #3a5073;
+    text-align: center;
+    color: white;
+}
+footer div div {
+    padding: 10px;
+    flex-direction: column;
+}
+.footlogo {
+    flex-direction:row;
+    text-align: left;
+}
+footer div p{
+    text-align: left;
+}
+h2, h1{
+	font-family: "Passion One", Roboto, sans-serif;
+}
+p{
+    text-align: center;
+	font-family: "Roboto", Passion One, sans-serif;
 }
 
-footer p, img, a {
-    color: #b0e4cf;
-}
 
-footer h1 {
-    font-size: 20px;
-    font-style: italic;
-}
 
-.address {
-    margin-top: 1px;
-    font-style: italic;
-}
-
-.pin {
-    width: 15px;
-    height: 15px;
-}
-
-footer a:hover {
-    color: #73a18e;
-    text-decoration: underline;
-}
-
-footer hr {
-    border-color: #b0e4cf;
-}
-
-.footerer p {
-    margin: 1px;
-    font-size: 12px;
-}
-
-.spotlight {
+/*MAIN*/
+.spotlight, section {
     text-align: center;
     background-color: lightgrey;
     border-style: solid;
@@ -187,4 +119,39 @@ footer hr {
     padding: 1em;
     margin: 0 auto;
     font-style: italic;
+    grid-area: auto;
+}
+.home{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color: #b4c5d6;
+
+}
+.event{
+    grid-column: 1/2;
+    grid-row: 1/2; 
+}
+.weather{
+    grid-column: 1/2;
+    grid-row: 2/3;   
+}
+#hero{
+    grid-column: 2/4;
+    grid-row: 1/3;
+    width: 100%;
+}
+.news{
+    grid-column: 2/4;
+    grid-row: 3/4;
+    width: 100%; 
+}
+.spotlights{
+    grid-column: 4/5;
+    grid-row: 1/4;
+    width: 100%;
+}
+.join{
+    grid-column: 1/2;
+    grid-row: 3/4;   
 }

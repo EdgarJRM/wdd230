@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Edgar Rodríguez" />
+    <meta name="author" content="Edgar Rodríguez">
     <meta name="description" content="Chamber of commerce site">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
@@ -15,52 +15,61 @@
 </head>
 <body>
     <header>
-        <img class="logo" alt="Chamber Logo" src="logo.png">
-        <h1>Chamber of Commerce</h1>
-        <a href="https://www.facebook.com/"><img class="socialLogo" alt="Facebook" src="images/facebook.png"></a>
-        <a href="https://www.instagram.com"><img class="socialLogo" alt="Instagram" src="images/instagram.png"></a>
-        <button id="navButton" type="button"><img class="hamburger" alt="Navigation" src="hamburger.png"></button>
-        <nav id="nav" style="display: flex;">
-            <ul>
-                <li><a href="">Discover</a></li>
-                <li><a href="">Directory</a></li>
-                <li><a href="">Join</a></li>
-                <li><a href="">Contact</a></li>
-            </ul>
-        </nav>
+        <div>
+            <div>
+                <img class="logo" alt="Chamercela Logo" src="images/logo-chamercela.png">
+                <h1>Chamber of Commerce</h1>
+            </div>
+            <nav id="nav" style="display: flex;">
+                <ul class="navigation">
+                    <li><a class="menu" href="#"></a></li>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Discover</a></li>
+                    <li><a href="">Directory</a></li>
+                    <li><a href="">Join</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+            <div>
+                <a href="https://www.facebook.com/" target="_blank"><img class="socialLogo" alt="Facebook" src="images/facebook.png"></a>
+                <a href="https://www.instagram.com" target="_blank"><img class="socialLogo" alt="Instagram" src="images/instagram.png"></a>
+            </div>
+        </div>
         <p id="Date"><span id="TodayDate"></span></p>
     </header>
     <main>
         <div class="home">
-            <section id="hero">Hero with site name call to action</section>
             <section class="event">Event</section>
-            <section class="weather">Weather</section>
-            <section class="news">News Release</section>
+            <section id="hero">Hero with site name call to action</section>
             <section class="spotlights">
                 <div class="spotlight">Spotlight 1</div>
                 <div class="spotlight">Spotlight 2</div>
                 <div class="spotlight">Spotlight 3</div>
             </section>
+            <section class="weather">Weather</section>
             <section class="join">Join</section>
+            <section class="news">News Release</section>
         </div>
     </main>
     <footer>
         <div class="">
-            <img class="logo" alt=" Chamber Logo" src="images/logo.png">
-            <div class="">
-                <h1> Chamber of Commerce</h1>
-                <p class="address">123 Chamber lane<br>,  58885</p>
+            
+            <div class="footlogo">
+                <img class="logo" alt=" Chamercela Logo" src="images/logo-chamercela-footer.png">
+                <div>
+                    <h1> Chamber of Commerce</h1>
+                    <p class="address">Avenida Vargas, esquina de la Carrera 24,<br>Zip: 3001</p>
+                </div>
             </div>
             <div class="">
-                <p class="email">info@chamber.org</p>
-                <p class="phone">+1 (801) 369-5375</p>
-                <a class="map"><img class="pin" alt="Map Pin" src="images/pin.png">Location Map</a>
+                <p class="email">info@chamercela.com</p>
+                <p class="phone">+582512519490</p>
+                <a class="map" href="https://www.google.com/maps/place/Camara+De+Comercio+Del+Estado+Lara/@10.0718484,-69.3099368,18z/data=!4m9!1m2!2m1!1scamar+de+comercio+lara+barquisimeto!3m5!1s0x8e87677491d1a541:0x85ed90adeda4d433!8m2!3d10.0717786!4d-69.3097724!16s%2Fg%2F11cjj49gwp?hl=es" target="_blank">📍 Location Map</a>
             </div>
         </div>
         <hr> 
-        <div class="">
-            <p class="copyright">&copy; 2022 </span>Chamber<span class="l"> | </span><br><b>Edgar Rodríguez</b><span class="l"> | </span><br>WDD 230 Project<span class="l"> | </span><br class="meanie">Last Modification: <span id="currendate"></span></p>
-        </div>
+        <p class="copyright">&copy; 2022 <span>Chamercela</span> | <span>Edgar Rodríguez</span> | <span>WDD 230 Project</span> | <span>Last Modification: </span><span id="currendate"></span></p>
+        <p>Weather Data from OpenWeatherMap.com</p>
     </footer>
     <script src="scripts/myscripts.js"></script>
 </body>

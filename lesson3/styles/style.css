@@ -167,10 +167,4 @@ background-color: #96b1ca;
 	}
 }
 
-/* Desktop Views, large */
-@media only screen and (min-width: 60em) {
-	nav {
-		flex-direction: row;
-		font-size: 1.1rem
-	}
-}
+

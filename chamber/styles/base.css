@@ -147,6 +147,7 @@ p{
     gap: 20px;
 }
 .home .EEE .hero{
+    background-image: url(/chamber/images/chamercela.png);
     grid-column: 2/4;
     grid-row: 1/3;
    

@@ -26,3 +26,13 @@ const fulldateUK = new Intl.DateTimeFormat("en-UK", {
 // long, medium, short options ... try them
 
 datefieldUK.innerHTML = `<em>${fulldateUK}</em>`;
+
+//BANNER for join us
+let bannerDay = now.getDay();
+const ban = document.getElementById('banner');
+if (bannerDay == 1 || bannerDay == 2) {
+	ban.style.display = 'block';
+}else{
+	ban.style.display = 'none';
+}
+

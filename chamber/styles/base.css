@@ -52,6 +52,15 @@ body {
 	font-family: "Roboto", Passion One, sans-serif;
 }
 
+/* banner */
+#banner p{
+    margin: 0;
+    background-color: #0432cc;
+    line-height: 2em;
+    color: rgb(255, 255, 255);
+    text-align: center;
+  }
+  
 /* phone or baseline views, small */
 header {
 	margin: 0 auto;	

@@ -53,11 +53,6 @@ body {
 }
 
 /* phone or baseline views, small */
-main {
-	margin: 0 auto;
-	display: grid;
-	grid-template-columns: 1fr;
-}
 header {
 	margin: 0 auto;	
     background-color: #3a5073;
@@ -112,46 +107,48 @@ p{
 /*MAIN*/
 .spotlight, section {
     text-align: center;
+    min-height: 200px;
     background-color: lightgrey;
     border-style: solid;
     border-width: 1px;
-    border-color: grey;
+    border-color: rgb(0, 0, 0);
     padding: 1em;
-    margin: 0 auto;
-    font-style: italic;
-    grid-area: auto;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+    font-style: Roboto;
 }
 .home{
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 3fr 1fr;
     background-color: #b4c5d6;
-
+    padding: 20px;
+    gap: 20px;
 }
-.event{
-    grid-column: 1/2;
-    grid-row: 1/2; 
-}
-.weather{
-    grid-column: 1/2;
-    grid-row: 2/3;   
-}
-#hero{
-    grid-column: 2/4;
-    grid-row: 1/3;
-    width: 100%;
-}
-.news{
-    grid-column: 2/4;
-    grid-row: 3/4;
-    width: 100%; 
+.EEE{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
 }
 .spotlights{
-    grid-column: 4/5;
-    grid-row: 1/4;
-    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
 }
-.join{
+.home .EEE .hero{
+    grid-column: 2/4;
+    grid-row: 1/3;
+   
+}
+.home .EEE .weather{
     grid-column: 1/2;
-    grid-row: 3/4;   
+    grid-row: 2/3;
+   
+}
+.home .EEE .news{
+    grid-column: 2/4;
+    grid-row: 3/4;
+   
 }

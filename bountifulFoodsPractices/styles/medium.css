@@ -1,0 +1,35 @@
+/*Ajustando la sección de tablas*/
+/*Ajustando la sección de tablas*/
+.slide{
+    position: relative;
+    scroll-snap-align: center;
+}
+
+.currency-table--container{
+    display: flex;
+    min-height: 316px;
+    margin: 0 auto;
+    gap: 20px;
+    
+}
+.main-tables-container{
+    display: flex;
+    width: 930px;
+    padding-bottom: 60px;
+    margin: 0 auto;
+}
+/*justando la sección de beneficios*/
+.product-cards--container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 930px;
+    margin: 0 auto;
+}
+/*Centra el contenido con justify-content: center*/
+.plans-container--slider {
+    justify-content: center;
+    
+}
+.currency-table--container{
+    justify-content: center;
+}

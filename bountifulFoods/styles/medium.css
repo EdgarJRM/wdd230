@@ -1,0 +1,6 @@
+/*justando la sección de beneficios*/
+.products {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 930px;
+}

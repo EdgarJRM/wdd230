@@ -10,29 +10,58 @@ hambutton.addEventListener('click', () => {mainnav.classList.toggle('responsive'
 // What does toggle mean? Instead of add and remove, toggle means add the class name (the parameter, which in this case is named 'responsive') if it does not currently exist, and remove the 
 
 
-// DATE
+// DATE FOOTER
 document.querySelector(
 	"#currendate"
 ).textContent = document.lastModified;
 
-// select the elements to manipulate (output to)
-const datefieldUK = document.querySelector("#TodayDate"); // for european/family history format with day first.
 
-// derive the current date using a date object
-const now = new Date();
-const fulldateUK = new Intl.DateTimeFormat("en-UK", {
-	dateStyle: "full"
-}).format(now);
-// long, medium, short options ... try them
+// Weather select HTML elements in the document
+const currentTemp = document.querySelector('#current-temp');
+const weatherIcon = document.querySelector('#weather-icon');
+const humidityInfo = document.querySelector('#humidity');
+const infotemp1 = document.querySelector('#temp1');
+const infotemp2 = document.querySelector('#temp2');
+const infotemp3 = document.querySelector('#temp2');
+const captionDesc = document.querySelector('figcaption');
 
-datefieldUK.innerHTML = `<em>${fulldateUK}</em>`;
+const url = 'https://api.openweathermap.org/data/2.5/forecast?id=5368361&units=imperial&appid=3599ef865c1609d0d90179d4ccf7175f';
 
-//BANNER for join us
-let bannerDay = now.getDay();
-const ban = document.getElementById('banner');
-if (bannerDay == 1 || bannerDay == 2) {
-	ban.style.display = 'block';
-}else{
-	ban.style.display = 'none';
+async function apiFetch() {
+    try {
+      const response = await fetch(url);
+      if (response.ok) {
+        const data = await response.json();
+        console.log(data); // this is for testing the call
+        displayResults(data);
+      } else {
+          throw Error(await response.text());
+      }
+    } catch (error) {
+        console.log(error);
+    }
+  }
+
+apiFetch();
+
+function  displayResults(weatherData) {
+    currentTemp.innerHTML = `<strong>${weatherData.list[0].main.temp.toFixed(0)}</strong>`;
+  
+    const iconsrc = `https://openweathermap.org/img/w/${weatherData.list[0].weather[0].icon}.png`;
+    const desc = weatherData.list[0].weather[0].description;
+   
+    weatherIcon.setAttribute('src', iconsrc);
+    weatherIcon.setAttribute('alt', desc);
+    captionDesc.textContent = desc;
+	humidityInfo.innerHTML = weatherData.list[0].main.humidity;
+
+
+	infotemp1.innerHTML = `<strong>${weatherData.list[2].main.temp.toFixed(0)}</strong>`;
+	//Get Day
+	const now = new Date();
+	let bannerDay = now.getDay();
+	console.log(bannerDay);
+
+
+
 }
-

@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Edgar Rodríguez">
     <link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/medium.css" media="(min-width: 930px)">
     <title>Bountiful Foods</title>
 </head>
 <body>
@@ -27,48 +29,83 @@
         </div>
     </header>
     <main>
-        <section class="main-exchange-container">
-            <div class="backgroundImg"></div>
-            <div class="main-exchange-container--title">
-                <h2>Visibilizamos todas las tazas de cambio.</h2>
-                <p>Traemos información en tiempo real de las casas de cambio y las monedas más importantes del mundo.</p>
+        <img class="banner-home" src="images/Banner-home.png" alt="banner with logo Bountiful Food">
+        <section class = "products">
+            <article class = "product_image">
+                <img class="" src="images/beans.jpg" alt="beans">
+                <a href="" class="header-button">Click Here</a>
+            </article>
+            <article class = "product_image">
+                <img class="" src="images/localProducts.png" alt="local Products">
+                <a href="" class="header-button">Click Here</a>
+            </article>
+            <article class = "product_image">
+                <img class="" src="images/FreshProducts.png" alt="Fresh Products">
+                <a href="" class="header-button">Click Here</a>
+            </article>
+            <article class = "product_image">
+                <img class="" src="images/andeanGrains.jpg" alt="Andean Grains">
+                <a href="" class="header-button">Click Here</a>
+            </article>
+        </section>
+        <section>
+            <div class = "infoCoastalArea">
+                <p class="product--card-title">Los Angeles</p>
+                <p class="product--card-body">Los Angeles, for more than a century, has been indelibly associated with a mild climate, plenty of leisure and outdoor recreation, as well as the special aura of celebrity associated with Hollywood. The lifestyle of Los Angeles residents (who call themselves Angelenos) is based on the automobile, idealizes the single-family home, and favors informality. In generations past, farmers nurtured abundant orchards of oranges, lemons, apricots, and peaches, planted vast fields of vegetables, and raised dairy cattle. In the mid-20th century, Los Angeles was the most productive agricultural county in the country. Most of the county's orchards and farmland have succumbed to urban sprawl, but agriculture continues to play a role in the regional economy. Major crops include nursery and greenhouse plants, vegetables, fruits, nuts, seeds, and hay.</p>
             </div>
-            <section class="main-tables-container">
-                <div class="main-currency-table">
-                    <p class="currency-table--title">Monedas</p>
-                    <div class="currency-table--container">
-                        <table>
-                            <tr>
-                                <td class="table__top-left">Bitcoin</td>
-                                <td class="table__top-right table-right">$1.96 <span></span></td>
-                            </tr>
-                            <tr>
-                                <td>Ethereum</td>
-                                <td class="table__right">$0.07</td>
-                            </tr>
-                            <tr>
-                                <td>Ripple</td>
-                                <td class="table__right">$2.15</td>
-                            </tr>
-                            <tr>
-                                <td class="table__buttom-left">Stellar</td>
-                                <td class="table__bottom-right table__right">$4.96</td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="currency-table--date">
-                        <p><b>Actualizado:</b> 19 de julio 23:45</p>
-                    </div>
-                </div>
-            </section>
-        </section>    
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-    </main>
+            <div class="infoWeather">
+                <h3>Weather card(s)</h3>
+                <figure>
+                    <span id="current-temp"></span> &deg;F</p>
+                    <img src="" alt="" id="weather-icon"/>
+                    <figcaption></figcaption>
+                    <p>Humidity: <b><span id = "humidity"></span>%</b></p>
+                </figure>
+                <select>
+                    <h3>Temperature Forecast</h3>
+                    <span id = "day1"><span id = "temp1"></span></span>
+                    <span id = "day2"><span id = "temp2"></span></span>
+                    <span id = "day3"><span id = "temp3"></span></span>
+                </select>
+            </div>
+        </section>
+        <section class = "gallery">
+            <h2>GALERY</h2>
+            <article class = "photo-gallery">
+                <img class="" src="images/Gallery3.png" alt="Andean Grains">
+                <img class="" src="images/Gallery1.png" alt="Andean Grains">
+                <img class="" src="images/Gallery5.png" alt="Andean Grains">
+                <img class="" src="images/Gallery4.png" alt="Andean Grains">
+                <img class="" src="images/Gallery6.png" alt="Andean Grains">
+                <img class="" src="images/Gallery2.png" alt="Andean Grains">
+                <img class="" src="images/Gallery7.png" alt="Andean Grains">
+                <img class="" src="images/Gallery8.png" alt="Andean Grains">
+            </article>
+        </section>
+        <section>
+            <p>Total number of specialty drinks requested: <span id = "numberFresh"></span></p>
+        </section>
+    </main>  
     <footer>
-   
+        <section>
+            <article>
+                <h6>Contact us</h6>
+                <a class="mail" href="https://www.google.com/" target="_blank">sales@BountifulFood.com</a>
+                <span>+1 (801) 999-9999</span>
+                <span>5630 Santa Monica Blvd, Hollywood</span>
+                <span>Los Ángeles, CA 90038, United States</span>
+            </article>
+                <h6>Follow us</h6>
+                <a class="facebook" href="https://www.facebook.com/" target="_blank">Facebook</a>
+                <a class="instagram" href="https://www.instagram.com/" target="_blank">Instagram</a>
+                <a class="youTube" href="https://www.youtube.com/" target="_blank">YouTube</a>
+                <a class="twitter" href="https://twitter.com/" target="_blank">Twitter</a>
+            <article>
+                <img class="" src="images/BountifulFoodlogoFooter.png" alt="Logo">
+            </article>
+        </section>
+        <p>&copy; 2022 - Edgar Rodríguez</p>     
+        <p>Last update: <span id = "currendate"></span></p>   
     </footer>
     <script src="scripts/bountifulScripts.js"></script>
 </body>

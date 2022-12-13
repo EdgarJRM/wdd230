@@ -74,12 +74,11 @@ header {
     justify-content: center;
     width: 100%;
     min-width: 324px;
-    height: 334px;
+    min-height: 200px;
     text-align: center; 
 }
 header img {
     width: 150px;
-    margin-top: 60px;
     padding: 10px;
     align-self: center;
 }
@@ -92,14 +91,14 @@ header img {
     width: 90%;
     min-width: 288px;
     max-width: 900px;
-    height: 218px;
+    min-height: 150px;
     text-align: center;
     align-self: center;
     
 }
 header p {
-    margin-top: 25px;
-    font-size: 1.4rem;
+    padding-top: 25px;
+    font-size: 16px;
     font-weight: 500;
     line-height: 1.8rem;
     color: var(--soft-orange);
@@ -109,7 +108,7 @@ header p {
 header .header-button {
     position: absolute;
     left: calc(50% - 118px);
-    top: 270px;
+    top: 170px;
     display: block;
     margin-top: 35px;
     padding: 15px;
@@ -136,81 +135,23 @@ header .header-button {
 }
 
 /*main*/
-/*CSS practica */
-main {
+main .banner-home{
     width: 100%;
     min-width: 320px;
-    height: auto;
-    background-color: var(--off-white);
-}
-.main-exchange-container {
-    width: 100%;
-    height: auto;
-    padding-top: 80px;
-    padding-bottom: 30px;
-    text-align: center;
-}
-.main-exchange-container--title {
-    width: 90%;
-    min-width: 288px;
-    max-width: 900px;
     margin: 0 auto;
 }
-.main-exchange-container .backgroundImg {
-    width: 200px;
-    height: 200px;
-    margin: 0 auto;
-    margin-bottom: 50px;
-    background-image: url("/bountifulFoods/images/BountifulFoodLogo.png");
-    background-size:contain;
-    background-position: center;
-    background-repeat: no-repeat;
+/*Products, Home page*/
+.products{
+   margin:0 auto;
+   
 }
-.main-exchange-container h2 {
-    margin-bottom: 30px;
-    font-size: 2.4rem;
-    font-weight: bold;
-    line-height: 2.6rem;
-    color: var(--black);
-}
-.main-exchange-container p {
-    margin-bottom: 30px;
-    font-size: 1.4rem;
-    font-weight: 500;
-    line-height: 1.6rem;
-    color: #757575;
-}
-.main-currency-table {
-    width: 70%;
-    min-width: 235px;
-    max-width: 500px;
-    height: 360px;
-    margin: 0 auto;
-    font-family: "Montserrat", sans-serif;
-}
-.main-currency-table .currency-table--title {
-    margin-bottom: 15px;
-    font-size: 1.8rem;
-    font-weight: bold;
-    line-height: 2.3rem;
-    color: var(--bitcoin-orange);
-}
-.currency-table--container {
-    width: 90%;
-    min-width: 230px;
-    max-width: 300px;
-    height: 250px;
-    margin: 0 auto;
-}
-.currency-table--container table {
-    width: 100%;
+/*.products img{
+    flex: 1;
     height: 100%;
+    min-width: 280px; 
+    margin: auto;
+}*/
+.product_image{
+    min-width: 320px;
 }
-.currency-table--container td {
-    width: 50%;
-    font-size: 1.6rem;
-    font-weight: 500;
-    line-height: 1.9rem;
-    color: var(--grey);
-    background-color: var(--just-white);
-}
+

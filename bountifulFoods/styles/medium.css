@@ -1,8 +1,9 @@
 /*justando la sección de beneficios*/
+/*PRODUCT*/
 .products {
     display: grid;
     grid-template-columns: 50% 50%;
-    width: 930px;
+    max-width: 100%;
 }
 
 /*Header*/
@@ -38,12 +39,6 @@ main .info{
     grid-template-columns: 1fr 1fr;
 }
 
-/*PRODUCT*/
-.products{
-    max-width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
 
 /*GALLERY*/
 .photo-gallery img{

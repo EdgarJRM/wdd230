@@ -54,6 +54,14 @@ main .info{
 
 /*Footer*/
 footer section {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/*-------------------------------------FRESH PAGE-----------------------------------------*/
+.infoDrink{
     display: flex;
-    justify-content: space-between;
+}
+.infoDrink img{
+    width: 100% / 3;
 }

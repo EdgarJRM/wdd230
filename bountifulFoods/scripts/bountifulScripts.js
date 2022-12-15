@@ -84,3 +84,32 @@ function GetdayWeekend(numberday){
 		return "Sat: ";
 	}
 }
+
+/*-----------------Fresh Drink-----------------*/
+
+// Weather select HTML elements in the document
+
+
+const url2 = 'https://brotherblazzard.github.io/canvas-content/fruit.json';
+
+async function apiFetchFreshDrink() {
+    try {
+      const response = await fetch(url2);
+      if (response.ok) {
+        const data = await response.json();
+        console.log(data); // this is for testing the call
+        displayFresh(data);
+      } else {
+          throw Error(await response.text());
+      }
+    } catch (error) {
+        console.log(error);
+    }
+  }
+
+apiFetchFreshDrink()
+
+function displayFresh(data){
+	
+	
+}

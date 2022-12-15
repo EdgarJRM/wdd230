@@ -90,11 +90,9 @@ header img {
     justify-content: space-between;
     width: 90%;
     min-width: 288px;
-    max-width: 900px;
     min-height: 150px;
     text-align: center;
     align-self: center;
-    
 }
 header p {
     padding-top: 25px;
@@ -135,23 +133,144 @@ header .header-button {
 }
 
 /*main*/
+
 main .banner-home{
     width: 100%;
     min-width: 320px;
     margin: 0 auto;
 }
+
 /*Products, Home page*/
 .products{
-   margin:0 auto;
-   
+    display: block;
 }
-/*.products img{
-    flex: 1;
-    height: 100%;
-    min-width: 280px; 
-    margin: auto;
-}*/
 .product_image{
-    min-width: 320px;
+    position: relative
+}
+.product_image img{
+    width: 100%;
 }
 
+.product-button{
+    position: absolute;
+    left: 15%;
+    bottom:  40px;
+    display: block;
+    margin-top: 35px;
+    width: 70%;
+    padding: 15px;
+    height: 48px;
+    background-color: #07BE91;
+    /*Sombra*/
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--off-white);
+}
+
+/*----SECTION INFO----????????????????????????????????????????????????????????*/
+main .infoWeather{
+    text-align: center;
+    margin: 0 auto;
+    margin: 40px;
+}
+main .info{
+    display: block;
+
+}
+
+/*information Coastal Area"*/
+.infoCoastalArea{
+    width: 100%;
+    min-width: 320px;
+    background-image: linear-gradient(rgba(256, 256, 256, 0.20), rgba(256, 256, 256, 0.20)), url("/bountifulFoods/images/Hollywood.jpg");
+    background-color: #BC8724;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.infoCoastTitle{
+    font-size: 30px;
+    text-align: center;
+    padding: 15px;
+}
+.infoCoastBody{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px;
+    color: rgb(0, 0, 0);
+}
+
+/*GALLERY*/
+.gallery {
+    text-align: center;
+    padding: 20px;
+    justify-content: center;
+}
+.gallery h2{
+    padding: 20px;
+
+}
+.photo-gallery{
+    display: block;
+}
+.photo-gallery img{
+    padding: 15px;
+    min-width: 200px;
+}
+
+/*Secciones Drink Request*/
+.drinks_requested{
+    justify-content: center;
+    padding: 15px;
+    background-color: #07BE91;
+    text-align: center;
+    font-size: 22px;
+    font-style:italic;
+}
+
+/*Secciones Footer*/
+footer section {
+    display: block;
+    width: 100%;
+    justify-content: center;
+    padding: 30px;
+    background-color: #BC8724;
+    text-align: center;
+}
+footer ul {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    list-style: none;
+}
+footer article{
+    padding: 20px;
+}
+footer img {
+    max-width: 170px;
+}
+.left li {
+    margin: 10px 0;
+}
+footer a {
+    text-decoration: none;
+    color: var(--just-white);
+}
+footer a:hover {
+    background-color: black;
+}
+footer p{
+    font-size: 20px;
+}
+body{
+    width: 100%;
+}
+.copyRight{
+    border-top: 2px dotted black;
+}

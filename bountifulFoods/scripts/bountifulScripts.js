@@ -20,9 +20,9 @@ document.querySelector(
 const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
 const humidityInfo = document.querySelector('#humidity');
-const infotemp1 = document.querySelector('#temp1');
-const infotemp2 = document.querySelector('#temp2');
-const infotemp3 = document.querySelector('#temp2');
+const infoday1 = document.querySelector('#day1');
+const infoday2 = document.querySelector('#day2');
+const infoday3 = document.querySelector('#day3');
 const captionDesc = document.querySelector('figcaption');
 
 const url = 'https://api.openweathermap.org/data/2.5/forecast?id=5368361&units=imperial&appid=3599ef865c1609d0d90179d4ccf7175f';
@@ -44,7 +44,7 @@ async function apiFetch() {
 
 apiFetch();
 
-function  displayResults(weatherData) {
+function displayResults(weatherData) {
     currentTemp.innerHTML = `<strong>${weatherData.list[0].main.temp.toFixed(0)}</strong>`;
   
     const iconsrc = `https://openweathermap.org/img/w/${weatherData.list[0].weather[0].icon}.png`;
@@ -55,13 +55,32 @@ function  displayResults(weatherData) {
     captionDesc.textContent = desc;
 	humidityInfo.innerHTML = weatherData.list[0].main.humidity;
 
-
-	infotemp1.innerHTML = `<strong>${weatherData.list[2].main.temp.toFixed(0)}</strong>`;
-	//Get Day
+	//Get Day and temperature
 	const now = new Date();
 	let bannerDay = now.getDay();
-	console.log(bannerDay);
+	infoday1.innerHTML = GetdayWeekend(bannerDay) + `<strong>${weatherData.list[2].main.temp.toFixed(0)}</strong>`;
+	infoday2.innerHTML = GetdayWeekend(bannerDay + 1) + `<strong>${weatherData.list[9+1].main.temp.toFixed(0)}</strong>`;
+	infoday3.innerHTML = GetdayWeekend(bannerDay + 2) + `<strong>${weatherData.list[18].main.temp.toFixed(0)}</strong>`;
+	
+	
 
+	console.log(GetdayWeekend(7));
+}
 
-
+function GetdayWeekend(numberday){
+	if (numberday == 0 || numberday == 7){
+		return "Sun: ";
+	}else if (numberday == 1 || numberday == 8){
+		return "Mon: ";
+	}else if (numberday == 2){
+		return "Tue: ";
+	}else if (numberday == 3){
+		return "Wed: ";
+	}else if (numberday == 4){
+		return "Thur: ";
+	}else if (numberday == 5){
+		return "Fri: ";
+	}else if (numberday == 6){
+		return "Sat: ";
+	}
 }

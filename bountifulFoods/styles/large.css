@@ -1,0 +1,11 @@
+.photo-gallery img{
+    width: 23%;
+}
+
+/*PRODUCT*/
+.products{
+    display: flex;   
+}
+.product_image {
+    width: 25%; 
+}

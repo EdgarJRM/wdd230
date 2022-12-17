@@ -9,3 +9,10 @@
 .product_image {
     width: 25%; 
 }
+
+
+/*-------------------------------------About Us Page-----------------------------------------*/
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}

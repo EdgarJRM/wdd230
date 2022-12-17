@@ -187,7 +187,7 @@ main .info{
 .infoCoastalArea{
     width: 100%;
     min-width: 320px;
-    background-image: linear-gradient(rgba(256, 256, 256, 0.20), rgba(256, 256, 256, 0.20)), url("/images/hollywood1.jpg");
+    background-image: linear-gradient(rgba(256, 256, 256, 0.20), rgba(256, 256, 256, 0.20)), url("https://edgarjrm.github.io/wdd230/bountifulFoods/images/hollywood1.jpg");
     background-color: #BC8724;
     background-position: center;
     background-size: cover;
@@ -363,4 +363,14 @@ input:valid + input::before {
 	75% {
 		transform: translateX(3px);
 	}
+}
+
+
+
+/*-------------------------------------About Us Page-----------------------------------------*/
+main{
+    display: block;
+}
+main div{
+    padding: 20px;
 }

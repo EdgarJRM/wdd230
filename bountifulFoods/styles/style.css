@@ -366,11 +366,13 @@ input:valid + input::before {
 }
 
 
-
 /*-------------------------------------About Us Page-----------------------------------------*/
-main{
+.infoAboutUs{
     display: block;
 }
-main div{
+.infoAboutUs div{
     padding: 20px;
+}
+.banner-AboutUs{
+    width: 100%;
 }

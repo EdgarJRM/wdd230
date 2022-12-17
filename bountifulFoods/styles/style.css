@@ -235,7 +235,7 @@ main .info{
 }
 
 /*Secciones Footer*/
-footer section {
+footer div {
     display: block;
     width: 100%;
     justify-content: center;
@@ -254,6 +254,9 @@ footer article{
 }
 footer img {
     max-width: 170px;
+}
+footer h2 {
+    padding-bottom: 15px;
 }
 .left li {
     margin: 10px 0;

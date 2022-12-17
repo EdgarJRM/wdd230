@@ -55,8 +55,12 @@ footer div {
 
 /*-------------------------------------FRESH PAGE-----------------------------------------*/
 .infoDrink{
-    display: flex;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
-.infoDrink img{
-    width: 100% / 3;
+
+/*-------------------------------------ABOUT US-----------------------------------------*/
+.aboutus{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }

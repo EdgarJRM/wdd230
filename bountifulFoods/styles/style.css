@@ -368,6 +368,13 @@ input:valid + input::before {
 /*-------------------------------------About Us Page-----------------------------------------*/
 .infoAboutUs{
     display: block;
+    text-align: center;
+}
+.infoAboutUs ul {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 2.6rem;
+    list-style: none;
 }
 .infoAboutUs div{
     padding: 20px;
@@ -375,11 +382,19 @@ input:valid + input::before {
 .banner-AboutUs{
     width: 100%;
 }
-.aboutus{
+.aboutus, .objetive{
     display: block;
     padding: 20px;
 }
-.aboutus div{
+.objetive{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.20), rgba(255, 255, 255, 0.20)), url("https://edgarjrm.github.io/wdd230/bountifulfoods/images/banner_objetive.jpg");
+    background-color: #BC8724;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+.aboutus div, .objetive article{
     padding: 20px;
     align-self: center;
 }

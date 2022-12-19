@@ -64,3 +64,8 @@ footer div {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+
+.objetive{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}

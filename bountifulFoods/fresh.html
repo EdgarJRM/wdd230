@@ -35,18 +35,51 @@
             <section>
                 <form method="get">
                     <div id="formmessage"></div>
+                    <legend>Customize your Drink</legend>
                     <label for="fullname">Name:</label>
                     <input type="text" id="fullname" name="fullname" required placeholder="Your full name" />
                     <label for="email">Email address:</label>
                     <input type="email" id="email" name="email" required />
                     <label for="phone">Phone number:</label>
                 
-                    <label for="keyphrase">Key Phrase:</label>
-                    <input type="text" id="keyphrase" name="keyphrase" pattern="[a-z]*" required /> <!-- {min,max} -->
-                    <label for="keyphrase2">Re-enter Key Phrase:</label>
-                    <input type="text" id="keyphrase2" name="keyphrase2" />
+                    <label>First Taste
+                        <select name="subject">
+                                <option value="">Please Select</option>
+                            <option value="software">Software Development</option>
+                            <option value="creative">Creative Professional</option>
+                            <option value="info">Information Technology</option>
+                            <option value="data">Data Preofessional</option>
+                            <option value="construction">Construction</option>
+                            <option value="manufacturing">Manufacturing</option>
+                            <option value="securitu">Cyber Security</option>
+                        </select>
+                    </label>
+                    <label>Second Taste
+                        <select name="subject">
+                                <option value="">Please Select</option>
+                            <option value="software">Software Development</option>
+                            <option value="creative">Creative Professional</option>
+                            <option value="info">Information Technology</option>
+                            <option value="data">Data Preofessional</option>
+                            <option value="construction">Construction</option>
+                            <option value="manufacturing">Manufacturing</option>
+                            <option value="securitu">Cyber Security</option>
+                        </select>
+                    </label>
+                    <label>Third Taste
+                        <select name="subject">
+                                <option value="">Please Select</option>
+                            <option value="software">Software Development</option>
+                            <option value="creative">Creative Professional</option>
+                            <option value="info">Information Technology</option>
+                            <option value="data">Data Preofessional</option>
+                            <option value="construction">Construction</option>
+                            <option value="manufacturing">Manufacturing</option>
+                            <option value="securitu">Cyber Security</option>
+                        </select>
+                    </label>
             
-                    <label for="comments">Message:</label>
+                    <label for="comments">Special Instructions:</label>
                     <textarea id="comments" name="comments" required></textarea>
                     <button id="btnSubmit" type="submit">Send Message</button>
                     <input type="hidden" value="43aster">

@@ -387,7 +387,7 @@ input:valid + input::before {
     padding: 20px;
 }
 .objetive{
-    background-image: linear-gradient(rgba(255, 255, 255, 0.20), rgba(255, 255, 255, 0.20)), url("https://edgarjrm.github.io/wdd230/bountifulfoods/images/banner_objetive.jpg");
+    background-image: linear-gradient(rgba(255, 255, 255, 0.20), rgba(255, 255, 255, 0.20)), url("https://edgarjrm.github.io/wdd230/bountifulFoods/images/banner_objetive.jpg");
     background-color: #BC8724;
     background-position: center;
     background-size: cover;
